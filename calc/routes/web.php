@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get ('/calc', function () {
+    return view('calc',[
+        'name'=>'Ilya'
+    ]);
+});
+
+Route::get('/user', 'UserController@index');
