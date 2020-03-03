@@ -2,51 +2,66 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="front.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.4/dist/semantic.min.css" >
+    <link rel="stylesheet" type="text/css" href="front.css" >
     <title>HTML калькулятор</title>
 </head>
 <body>
+<div class="ui container">
+<div class="fom">
 <form name="calc" class="wrapper">
     <table class="main">
-        <tr class="display">
-            <td colspan="4"><input type="text" name="input"></td>
-        </tr>
-        <tr class="buttons">
-            <td><input type="button" value="1" OnClick="calc.input.value += '1'"></td>
-            <td><input type="button" value="2" OnClick="calc.input.value += '2'"></td>
-            <td><input type="button" value="3" OnClick="calc.input.value += '3'"></td>
+               <tr>
+                   <td>
+                <div  class="ui input">
+                    <input class="ui input" type="text" name="input" >
+                </div>
+                   </td>
+               </tr>
+   <tr>
+       <td>
+       <div  class="ui buttons">
+           <button id="jok"class="ui button" type="button" OnClick="calc.input.value += '1'">1</button>
+           <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '2'">2</button>
+           <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '3'">3</button>
+           <button id="green" class="ui button" type="button" OnClick="calc.input.value += '+'">+</button>
+    </div>
+       </td>
+   </tr>
+    <tr>
+        <td>
+    <div class="ui buttons">
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '4'">4</button>
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '5'">5</button>
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '6'">6</button>
+        <button id="red" class="ui button" type="button" OnClick="calc.input.value += '-'">-</button>
+    </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+    <div class="ui buttons">
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '7'">7</button>
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '8'">8</button>
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '9'">9</button>
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '/'">/</button>
 
-
-            <td rowspan="4">
-            <input type="reset" value="c" OnClick="calc.input.value = ''">
-            <input type="button" value="/" OnClick="calc.input.value += '/'">
-            <input type="button" value="x" OnClick="calc.input.value += '*'">
-            <input type="button" value="-" OnClick="calc.input.value += '-'">
-            <input type="button" value="+" OnClick="calc.input.value += '+'">
-            </td>
-        </tr>
-        <tr class="buttons">
-            <td><input type="button" value="4" OnClick="calc.input.value += '4'"></td>
-            <td><input type="button" value="5" OnClick="calc.input.value += '5'"></td>
-            <td><input type="button" value="6" OnClick="calc.input.value += '6'"></td>
-
-        </tr>
-        <tr class="buttons">
-            <td><input type="button" value="7" OnClick="calc.input.value += '7'"></td>
-            <td><input type="button" value="8" OnClick="calc.input.value += '8'"></td>
-            <td><input type="button" value="9" OnClick="calc.input.value += '9'"></td>
-
-
-        </tr>
-        <tr class="buttons">
-
-            <td><input type="button" value="0" OnClick="calc.input.value += '0'"></td>
-            <td><input type="button" value="." OnClick="calc.input.value += '.'"></td>
-            <td><input type="button" value="=" OnClick="calc.input.value = eval(calc.input.value)"></td>
-
-
-        </tr>
+    </div>
+    </tr>
+        </td>
+    <tr>
+        <td>
+    <div class="ui buttons">
+        <button id="rest" class="ui button" type="reset" OnClick="calc.input.value += ''">C</button>
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '0'">0</button>
+        <button id="yell" class="ui button" type="button" OnClick="calc.input.value = eval(calc.input.value)">=</button>
+        <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '*'">*</button>
+    </div>
+        </td>
+    </tr>
     </table>
 </form>
+</div>
+</div>
 </body>
 </html>
