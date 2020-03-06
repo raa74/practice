@@ -9,12 +9,13 @@
 <body>
 <div class="ui container">
 <div class="fom">
-<form name="calc" class="wrapper">
+<form name="calc" class="wrapper" action="{{action('MyMathController@sumbit')}}" method="POST">
+    <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <table class="main">
                <tr>
                    <td>
                 <div  class="ui input">
-                    <input class="ui input" type="text" name="input" >
+                    <input class="ui input" type="text" name="input" value="{{ $ol }}" >
                 </div>
                    </td>
                </tr>
@@ -54,7 +55,7 @@
     <div class="ui buttons">
         <button id="rest" class="ui button" type="reset" OnClick="calc.input.value += ''">C</button>
         <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '0'">0</button>
-        <button id="yell" class="ui button" type="button" OnClick="calc.input.value = eval(calc.input.value)">=</button>
+        <button id="yell" class="ui button" type="submit" >=</button>
         <button id="jok" class="ui button" type="button" OnClick="calc.input.value += '*'">*</button>
     </div>
         </td>

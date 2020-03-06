@@ -20,4 +20,4 @@ Route::get ('/calc', function () {
     ]);
 });
 
-Route::get('/user', 'UserController@index');
+Route::post('/user', 'MyMathController@sumbit');
