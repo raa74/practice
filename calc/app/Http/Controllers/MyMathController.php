@@ -5,34 +5,45 @@ namespace App\Http\Controllers;
 use App\ServiceClasses\Test;
 use Illuminate\Http\Request;
 use App\Http\Requests\SubmitRequest;
+use mysql_xdevapi\Exception;
 
 class MyMathController extends Controller
 {
-        public function submit(SubmitRequest $request)
-        {
-            $oper = array('+', '-',);
+    public function submit(SubmitRequest $request)
+    {
+        try {
+            $oper = array('+', '-','*','/');
             $expr = $request->input; // вытаскивается значение из поля ввода и переводится в строку
-           // $check = strpos($expr,$oper); // выполнение проверки
-            $arrOper=str_replace(['+','-'],[' + ',' - '],$expr);
-            $arrOper=explode(' ',trim($arrOper));
-           // dd($arrOper);
-            $check=in_array(array('+','-'),$arrOper);
-            $result = "0";
-            if ($check === true) {
-                $b = (int)substr($expr, strpos($expr, $oper) + 1, strlen($expr));
-                $a = (int)($request->input('input'));
-                switch ($oper) {
-                    case "+":
-                        $result = $a + $b;
-                        break;
-                    case "-":
-                        $result = $a - $b;
-                        break;
-                    default:
-                        $result = "Ошибка";
-                };
-                return view('calc', ['result' => $result]);
+            $arrOper = str_replace(['+', '-','*','/'], [' + ', ' - ',' * ', ' / '], $expr);
+            $arrOper = explode(' ', trim($arrOper));
+            $result = "";
+            // $this->ErrorToy(count($arrOper));
+            For ($y = 0; $y<=count($arrOper); $y++) {
+                $check = in_array($arrOper[$y], $oper);
+                if ($check === true) {
+                    switch ($arrOper[1]) {
+                        case "+":
+                            $result = $arrOper[0] + $arrOper[2];
+                            break;
+                        case "-":
+                            $result = $arrOper[0] - $arrOper[2];
+                            break;
+                        case "*":
+                            $result = $arrOper[0] * $arrOper[2];
+                            break;
+                        case "/":
+                            $result = $arrOper[0] / $arrOper[2];
+                            break;
+                        default:
+                            $result = "Ошибка";
+                    };
+                    return view('calc', ['result' => $result]);
+                }
             }
-            dd($check);
         }
+            catch (\Exception $ex) {
+            $ex='';
+            return view('calc', ['result' => $ex]);
+        }
+    }
 }

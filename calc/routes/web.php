@@ -19,5 +19,4 @@ Route::get ('/calc', function () {
         'name'=>'Ilya'
     ]);
 });
-
-Route::post('/result', 'MyMathController@submit');
+Route::post('/calc', 'MyMathController@submit');

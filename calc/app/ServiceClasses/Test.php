@@ -12,20 +12,21 @@ class Test
    // }
     public static function calc(SubmitRequest $request)
     {
-        $oper = array(["+","-"]);
         $expr = (string)($request->input); // вытаскивается значение из поля ввода и переводится в строку
-        $check = strpos($expr, $oper); // выполнение проверки
-        $result = "0";
-        if ($check === true) {
-            $b = (int)substr($expr, strpos($expr, $oper) + 1, strlen($expr));
-            $a = (int)($request->input);
+       // $arr = explode(["+", "-"], $expr);
+
+        $check = strpos($expr, $); // выполнение проверки
+        $result = "";
+        $b = (float)substr($expr, strpos($expr, $oper) + 1, strlen($expr));
+        $oper = substr($expr, strpos($expr, $oper) + 1, strlen($expr));
+        $a = (float)($request->input);
         switch ($oper) {
             case "+": $result = $a + $b; break;
             case "-": $result = $a - $b; break;
             default: $result = "Ошибка";
         };
             return view('calc', ['result' => $result]);
-        //if ($check === true) {
+            if ($check === true) {
          //   $b = (int)substr($expr, strpos($expr, '+') + 1, strlen($expr));
          //   $a = (int)($request->input);
           //  $result = $a + $b;
@@ -66,8 +67,6 @@ class Test
     $check=in_array(array('+','-'),$arrOper);
     $result = "0";
     if ($check === true) {
-        $b = (int)substr($expr, strpos($expr, $oper) + 1, strlen($expr));
-        $a = (int)($request->input('input'));
         switch ($oper) {
             case "+":
                 $result = $a + $b;
@@ -82,4 +81,10 @@ class Test
     }
     dd($check);
 }
+    /* if (isset($_POST['submit'])) {
+         $a = $_POST ['a'];
+         $oper = $_POST ['oper'];
+         $b = $_POST['b'];
+     }
+ }*/
 }

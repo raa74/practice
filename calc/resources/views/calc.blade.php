@@ -16,10 +16,20 @@
                <tr>
                    <td>
                 <div  class="ui input">
-                    <input class="ui input" id="workinput" type="text" name="input" value="@if(isset($result)){{ $result }}@endif" >
+                    <input class="ui input" id="workinput" type="text" readonly name="input" value="@if(isset($result)){{ $result }}@endif" >
                 </div>
                    </td>
                </tr>
+        <tr>
+            <td>
+                <div  class="ui buttons">
+                    <button id="jok" class="ui button calc" type="button" >(</button>
+                    <button id="jok" class="ui button calc" type="button" >)</button>
+                    <button id="jok" class="ui button calc" type="button" >%</button>
+                    <button id="rest" class="ui button calc" type="button" >C</button>
+                </div>
+            </td>
+        </tr>
    <tr>
        <td>
        <div  class="ui buttons">
@@ -54,7 +64,7 @@
     <tr>
         <td>
     <div class="ui buttons">
-        <button id="rest" class="ui button calc" type="reset" >C</button>
+        <button id="jok" class="ui button calc" type="button" >.</button>
         <button id="jok" class="ui button calc" type="button" >0</button>
         <button id="yell" class="ui button" type="submit" >=</button>
         <button id="jok" class="ui button calc" type="button" >*</button>
@@ -68,8 +78,11 @@
 </body>
 <script>
     $(document).ready(function () {
-        $('.calc').click(function(){
+            $('.calc').click(function(){
             $('#workinput').val($('#workinput').val()+$(this).text());
+        });
+        $('#rest').click(function () {
+            $('#workinput').val("");
         });
     });
 </script>
