@@ -26,7 +26,7 @@ class Test
             default: $result = "Ошибка";
         };
             return view('calc', ['result' => $result]);
-            if ($check === true) {
+           // if ($check === true) {
          //   $b = (int)substr($expr, strpos($expr, '+') + 1, strlen($expr));
          //   $a = (int)($request->input);
           //  $result = $a + $b;

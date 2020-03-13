@@ -6,43 +6,62 @@ use App\ServiceClasses\Test;
 use Illuminate\Http\Request;
 use App\Http\Requests\SubmitRequest;
 use mysql_xdevapi\Exception;
+use PhpParser\Node\Stmt\Foreach_;
+use App\ServiceClasses\Math;
 
 class MyMathController extends Controller
 {
     public function submit(SubmitRequest $request)
     {
         try {
-            $oper = array('+', '-','*','/');
-            $expr = $request->input; // вытаскивается значение из поля ввода и переводится в строку
-            $arrOper = str_replace(['+', '-','*','/'], [' + ', ' - ',' * ', ' / '], $expr);
-            $arrOper = explode(' ', trim($arrOper));
+            $a = '';
+            $op = '';
+            $b = '';
+            $oper = array('+', '-', '*', '/', '(', ')'); // задаётся массив используемых знаков операций
+            $expr = $request->input;
+            $arrOper = str_replace(['+', '-', '*', '/', '(', ')'], [' + ', ' - ', ' * ', ' / ', '(', ')'], $expr); // добавляются пробелы к операторам
+            $arrOper = explode(' ', trim($arrOper)); // создаётся разделитель по пробелам, удаляются пробелы в начале и конце строки
             $result = "";
-            // $this->ErrorToy(count($arrOper));
-            For ($y = 0; $y<=count($arrOper); $y++) {
-                $check = in_array($arrOper[$y], $oper);
-                if ($check === true) {
-                    switch ($arrOper[1]) {
-                        case "+":
-                            $result = $arrOper[0] + $arrOper[2];
+
+            foreach ($arrOper as $value ){
+
+                if (in_array($value,$oper)) {
+                    $op = $value;
+                }
+                else {
+                    if ($a == ''){
+                      $a = $value;
+                    }
+                    else {
+                        $b = $value;
+                    }
+                }
+                if ($a !='' && $b != '' && $op != '') {
+                    switch ($op ) {
+                        case '+':
+                            echo "$a : $b";
+                           $a = Math::Plus($a,$b);
+                           break;
+                        case '-':
+                            $a = Math::Minus($a,$b);
                             break;
-                        case "-":
-                            $result = $arrOper[0] - $arrOper[2];
+                        case '*':
+                            $a = Math::Ymno($a,$b);
                             break;
-                        case "*":
-                            $result = $arrOper[0] * $arrOper[2];
+                        case '/':
+                            $a = Math::Del($a,$b);
                             break;
-                        case "/":
-                            $result = $arrOper[0] / $arrOper[2];
-                            break;
-                        default:
-                            $result = "Ошибка";
-                    };
-                    return view('calc', ['result' => $result]);
+                    }
+                    $b = '';
+                    $op = '';
                 }
             }
-        }
-            catch (\Exception $ex) {
-            $ex='';
+            return view('calc', ['result' => $a]);
+
+
+
+        } catch (\Exception $ex) {
+            $ex = '';
             return view('calc', ['result' => $ex]);
         }
     }
