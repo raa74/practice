@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/calc/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/calc/app" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/facade/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/facade/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/facade/ignition-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/fideloper/proxy" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/jakub-onderka/php-console-color" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/jakub-onderka/php-console-highlighter" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpdocumentor/reflection-common" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpdocumentor/reflection-docblock" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpdocumentor/type-resolver" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpspec/prophecy" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpunit/php-token-stream" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/scrivo/highlight.php" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/debug" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
