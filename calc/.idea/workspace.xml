@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e36b235-3a33-447f-85c1-5bf7f30bdc90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ServiceClasses/Check.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ServiceClasses/Check.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -344,10 +344,17 @@
       <workItem from="1583900470835" duration="19872000" />
       <workItem from="1583985170284" duration="36714000" />
       <workItem from="1584094952021" duration="1457000" />
+<<<<<<< HEAD
       <workItem from="1584937541242" duration="651000" />
       <workItem from="1584946132191" duration="3608000" />
       <workItem from="1585028695203" duration="2782000" />
       <workItem from="1585114062902" duration="20000" />
+=======
+      <workItem from="1584772756009" duration="6447000" />
+      <workItem from="1584829070677" duration="1100000" />
+      <workItem from="1584836844078" duration="4576000" />
+      <workItem from="1585133360742" duration="3328000" />
+>>>>>>> 4b18905... Окончательные изменения в классе Check
     </task>
     <servers />
   </component>
