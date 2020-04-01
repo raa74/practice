@@ -6,6 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/calc/tests" isTestSource="true" packagePrefix="Tests\" />
       <excludeFolder url="file://$MODULE_DIR$/calc/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/calc/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/dbal" />
+      <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/event-manager" />
       <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/inflector" />
       <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/calc/vendor/doctrine/lexer" />
