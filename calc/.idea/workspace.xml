@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9e36b235-3a33-447f-85c1-5bf7f30bdc90" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/ServiceClasses/Check.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/ServiceClasses/Check.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +174,14 @@
       <workItem from="1584772756009" duration="6447000" />
       <workItem from="1584829070677" duration="1100000" />
       <workItem from="1584836844078" duration="4576000" />
-      <workItem from="1585133360742" duration="3328000" />
+      <workItem from="1585133360742" duration="3572000" />
+      <workItem from="1585248463572" duration="10952000" />
+      <workItem from="1585297995512" duration="594000" />
+      <workItem from="1585303776363" duration="1198000" />
+      <workItem from="1585589788311" duration="1192000" />
+      <workItem from="1585632807623" duration="603000" />
+      <workItem from="1586029569830" duration="834000" />
+      <workItem from="1586173810338" duration="2263000" />
     </task>
     <servers />
   </component>
@@ -181,9 +189,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="730" y="334" key="NewPhpClassDialog" timestamp="1584838937130">
+    <state x="730" y="334" key="NewPhpClassDialog" timestamp="1585290118817">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584838937130" />
+    <state x="730" y="334" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585290118817" />
   </component>
 </project>
