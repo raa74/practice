@@ -8,12 +8,13 @@ class CheckMas
 {
     public static function Check ($ded)
     {
-
         $you = array();
-        $v = array_search("(", $ded);
-        $h = array_search(")", $ded);
+        $v = 0;
+        $h = 0;
         while($h =='FALSE')
         {
+            $v = array_search("(", $ded);
+            $h = array_search(")", $ded);
             for ($d = 0; $d !== count($ded); $d++) {             //Цикл длиться пока $d не достигнет кол-во размера массива.
                 if ($ded[$d] === "(") {                          //Если ячейка массива ровна "("
                     $v = array_search("(", $ded);        //считывает нахождение символа "("
@@ -31,5 +32,16 @@ class CheckMas
             $ded[$h]='';
         }
 
+    }
+    public static function Filtr ($ded)
+    {
+        $v=0;
+        $h=0;
+        while ($h =='FALSE'||$v=="FALSE")
+        {
+            $v = array_search("(", $ded);
+            $h = array_search(")", $ded);
+
+        }
     }
 }
