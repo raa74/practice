@@ -21,10 +21,7 @@ class MyMathController extends Controller
             $expr = $request->input;
             $arrOper = str_replace(['+', '-', '*', '/', '(', ')'], [' + ', ' - ', ' * ', ' / ', '(', ')'], $expr); // добавляются пробелы к операторам
             $arrOper = explode(' ', trim($arrOper)); // создаётся разделитель по пробелам, удаляются пробелы в начале и конце строки
-            $result = "";
-
             foreach ($arrOper as $value ){
-
                 if (in_array($value,$oper)) {
                     $op = $value;
                 }
