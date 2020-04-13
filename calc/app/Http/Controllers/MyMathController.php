@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\ServiceClasses\Recording;
 use App\ServiceClasses\Test;
 use Illuminate\Http\Request;
 use App\Http\Requests\SubmitRequest;
@@ -21,7 +22,6 @@ class MyMathController extends Controller
             $expr = $request->input;
             $arrOper = str_replace(['+', '-', '*', '/', '(', ')'], [' + ', ' - ', ' * ', ' / ', '(', ')'], $expr); // добавляются пробелы к операторам
             $arrOper = explode(' ', trim($arrOper)); // создаётся разделитель по пробелам, удаляются пробелы в начале и конце строки
-            $result = "";
 
             foreach ($arrOper as $value ){
 
@@ -56,6 +56,7 @@ class MyMathController extends Controller
                     $op = '';
                 }
             }
+            Recording::Record($a, $expr);
             return view('calc', ['result' => $a]);
 
 
