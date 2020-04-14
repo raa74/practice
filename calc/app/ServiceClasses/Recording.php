@@ -8,7 +8,7 @@ use App\Http\Controllers\MyMathController;
 
 class Recording
 {
-    public static function Record(Float $result, String $expression) {
+    public static function Record($result, String $expression) {
         try {
             $log = new HistoryCalc();
             $log->Mathstring = $expression;

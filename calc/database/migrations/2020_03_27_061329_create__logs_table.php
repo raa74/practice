@@ -17,7 +17,7 @@ class CreateLogsTable extends Migration
             $table->increments('id');
             $table->date('Date');
             $table->string('Mathstring', 150);
-            $table->float ('Result');
+            $table->float ('Result')->nullable();
         });
     }
 

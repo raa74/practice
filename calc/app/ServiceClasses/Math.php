@@ -5,6 +5,7 @@ namespace App\ServiceClasses;
 
 
 use http\Exception;
+use phpDocumentor\Reflection\Types\Null_;
 
 class Math
 {
@@ -22,11 +23,16 @@ class Math
     }
     public static function Del($a,$b)
     {
-        if ($b== 0) {
-             throw new \Exception('Деление на ноль');
+        try {
+            if ($b == 0) {
+                throw new \Exception('Деление на ноль');
+            } else {
+                return $a / $b;
+            }
         }
-        else {
-         return $a / $b;
-        }
+        catch (\Exception $e){
+        echo $e->getMessage();
+    }
+    return Null;
     }
 }
